@@ -1,6 +1,17 @@
-group 'io.freefair'
-version '0.1-SNAPSHOT'
+buildscript {
 
+	repositories {
+		maven { url "https://jitpack.io" }
+	}
+
+	dependencies {
+		classpath 'io.freefair.gradle-plugins:git-version:1.0.1'
+	}
+}
+
+group 'io.freefair'
+
+apply plugin: 'io.freefair.git-version'
 apply plugin: 'java'
 
 sourceCompatibility = JavaVersion.VERSION_1_8
