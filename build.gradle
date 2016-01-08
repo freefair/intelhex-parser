@@ -1,9 +1,9 @@
-group 'freefair.io'
+group 'io.freefair'
 version '0.1-SNAPSHOT'
 
 apply plugin: 'java'
 
-sourceCompatibility = 8
+sourceCompatibility = JavaVersion.VERSION_1_8
 
 repositories {
 	mavenCentral()
